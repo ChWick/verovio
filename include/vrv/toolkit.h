@@ -23,6 +23,7 @@
 
 #include "checked.h"
 #include "unchecked.h"
+#include "vrvdef.h"
 
 namespace vrv {
 
@@ -32,7 +33,7 @@ enum FileFormat { UNKNOWN = 0, AUTO, MEI, HUMDRUM, PAE, DARMS, MUSICXML, MUSICXM
 // Toolkit
 //----------------------------------------------------------------------------
 
-class Toolkit {
+class VRV_EXPORT Toolkit {
 public:
     /**
      * @name Constructors and destructors

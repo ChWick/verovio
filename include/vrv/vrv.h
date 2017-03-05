@@ -21,6 +21,8 @@
 #include <time.h>
 #endif
 
+#include "vrvdef.h"
+
 namespace vrv {
 
 class Glyph;
@@ -121,7 +123,7 @@ bool Check(Object *object);
  * The default values can be changed by setters.
  */
 
-class Resources {
+class VRV_EXPORT Resources {
 public:
     /**
      * @name Setters and getters for static environment variables

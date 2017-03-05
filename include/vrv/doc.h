@@ -11,6 +11,7 @@
 #include "devicecontextbase.h"
 #include "scoredef.h"
 #include "style.h"
+#include "vrvdef.h"
 
 class MidiFile;
 
@@ -29,7 +30,7 @@ enum DocType { Raw = 0, Rendering, Transcription };
 /**
  * This class is a hold the data and corresponds to the model of a MVC design pattern.
  */
-class Doc : public Object {
+class VRV_EXPORT Doc : public Object {
 
 public:
     // constructors and destructors

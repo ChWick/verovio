@@ -30,6 +30,21 @@ namespace vrv {
 #define VERSION_DEV false
 
 //----------------------------------------------------------------------------
+// Export defines for dynamic dlls on windows
+//----------------------------------------------------------------------------
+
+#if defined(_WIN32)
+# ifdef VRV_BUILD
+#   define VRV_EXPORT __declspec(dllexport)
+# else
+#   define VRV_EXPORT __declspec(dllimport)
+# endif
+#else
+// any other platform
+# define VRV_EXPORT // nothing
+#endif
+
+//----------------------------------------------------------------------------
 // Object defines
 //----------------------------------------------------------------------------
 

@@ -21,7 +21,7 @@ namespace vrv {
 /**
  * This class represents a basic object in the layout domain
  */
-class BoundingBox {
+class VRV_EXPORT BoundingBox {
 public:
     // constructors and destructors
     BoundingBox();

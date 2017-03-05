@@ -72,7 +72,7 @@ typedef std::map<int, LayerN_VerserN_t> StaffN_LayerN_VerseN_t;
 /**
  * This class represents a basic object
  */
-class Object : public BoundingBox {
+class VRV_EXPORT Object : public BoundingBox {
 public:
     /**
      * @name Constructors, destructors, and other standard methods
